@@ -33,147 +33,29 @@ Home</a><br>
 <!--<a href="../tutorials/index.html" class="navLink">←Tutorials</a>--><br><br></div>
 <div class="abstract">This page has collected a variety of small github projects that I feel interesting and some of them form the foundation of my Ph.D. research topic. In a nutshell, have fun!</div>
 <div class="signature">- Orlando, Ding</div>
-<h2>Simulation</h2>
-<a class="navLink" target="blank" href="https://github.com/MatthewPeterKelly/dscTutorials/tree/master/LagrangeMechanics">← Lagrange mechanics</a>
-<p>A few tutorials, written in Matlab, that demonstrate how to use
-the Langrange Equations to derive the equation of motion for a
-variety of systems, including:</p>
+<h2>Algorithm Optimization</h2>
+<a class="navLink" target="blank" href="https://github.com/nicfossildev/CONOP_FORBIG">← CONOP optimization</a>
+<p>This code has been written in C# with cooperation of Chinese Academy of Science, Nanjing Biostratigraphy Research Team</p>
 <ul>
-    <li><a href="https://github.com/MatthewPeterKelly/dscTutorials/tree/master/LagrangeMechanics/simpleHarmonicOscillator">simple harmonic oscillator</a></li>
-    <li><a href="https://github.com/MatthewPeterKelly/dscTutorials/tree/master/LagrangeMechanics/singlePendulum">single pendulum</a></li>
-    <li><a href="https://github.com/MatthewPeterKelly/dscTutorials/tree/master/LagrangeMechanics/doublePendulum">double pendulum</a></li>
+    <li><a href="https://github.com/nicfossildev/CONOP_FORBIG/tree/master/CONOP">C# CONOP9</a></li>
 </ul>
-<a class="navLink" target="blank" href="https://github.com/MatthewPeterKelly/dscTutorials/tree/master/bouncingBall">← Bouncing Ball</a>
-<p>A ball bouncing around on hilly terrain. This simple simulation is designed for learning event detection with ode45 in Matlab.</p>
-<a class="navLink" target="blank" href="https://github.com/MatthewPeterKelly/dscTutorials/tree/master/toppling_stick">← Toppling Stick</a>
-<p>A simulation of a stick toppling from rest. Inspired by Tad
-Mcgeer's 1989 paper: <em>Wobbling, toppling, and forces of
-contact</em>. My simulation is based on a finite state machine,
-using ode45 for integration and event detection. I used this
-simulation to study the effects of coefficient of friction and
-moment of inertia; the results are discussed <a href=
-"../research/MattKelly__Simulations_with_Sliding_and_Intermittent_Contact.pdf">
-here.</a></p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/dscTutorials/tree/master/FancyDoublePendulum">←
-Three masses</a>
-<p>A system of three point masses in 2D. The center mass is
-connected to the other two with arbitrary force and torque
-actuators. This is the basis for another simple model of walking: a
-point mass at each foot, and at the hip. The simulation supports
-many different contact configurations, as shown in this simple test
-<a href="http://youtu.be/zr17IAtuDEY">animation</a>.</p>
-<h2>Trajectory Optimization</h2>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/TrajOpt">← TrajOpt -
-Trajectory Optimization Library (Matlab)</a>
-<p>I wrote a trajectory optimization library for Matlab, as a way
-to collect many of the things that I've learned about trajectory
-optimization. In particular, I tried to make the code readable, and
-I've also made it easy to compare different transcription methods.
-For example, it makes it easier to understand the trade-offs
-between multiple shooting and collocation, or whether it is worth
-it to use a high-order method.</p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/dscTutorials/tree/master/DoublePendulumWalker">←
-Double Pendulum Walker</a>
-<p>This code uses <a href="http://www.gpops2.com/">GPOPS</a> to
-find an optimal walking trajectory for a double pendulum model of
-walking.</p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/dscTutorials/tree/master/PendulumCart_SwingUp">←
-Cart-Pole Swing-Up</a>
-<p>Solves the swing-up problem for pendulum handing from a cart.
-There is a motor in the cart, but the pendulum hangs free. I solve
-the problem using three transcription algorithms: Multiple
-shooting, Orthogonal Collocation, and <a href=
-"http://www.gpops2.com/">GPOPS</a>. The differences between these
-methods are discussed <a href=
-"files/MattKelly__Transcription_Methods_for_Trajectory_Optimization.pdf">
-here</a>.</p>
+<h2>Deep Learning Framework Enablement on eGPU-macOS 10.13.6</h2>
+<a class="navLink" target="blank" href="https://github.com/llv22/pytorch-macOS-cuda">← Torch via eGPU on macOS 10.13.6</a>
+<p>As officially Pytorch doesn't support for macOS cuda, I used this repository to build pytorch on macOS cuda. This branch 1.12.0-fixed branch is the current stable branch with MPI+CUDA enabled.</p>
+<a class="navLink" target="blank" href="https://github.com/llv22/tensorflow-macOS-cuda">← Tensorflow via eGPU on macOS 10.13.6</a>
+<p>As officially Tensorflow doesn't support for macOS cuda, I used this repository to build tensorflow 2.8+ on macOS cuda. This branch v2.9.1-fixed branch is the current investigation branch.</p>
+<a class="navLink" target="blank" href="https://github.com/llv22/jax-macOS-cuda">← JAX via eGPU on macOS 10.13.6</a>
+<p>As officially JAX doesn't support macOS(at least testing on my macOS 10.13.6, cuda 10.1), trying to fix building issue and enabling CUDA on macOS becomes a task that help me reuse Nx 1080 cards for ML acceleration.</p>
+<a class="navLink" target="blank" href="https://github.com/llv22/nccl-osx">← NCCL via eGPU on macOS 10.13.6</a>
+<p>Optimized primitives for collective multi-GPU communication migrated to Mac OS X (10.13 - 10.13.6). In order to make library and nccl-test compatible, each nccl library version will be unique mapped to nccl-test on macOS version.</p>
+<a class="navLink" target="blank" href="https://github.com/llv22/bazel-macOS-10.13.6">← Bazel via eGPU on macOS 10.13.6</a>
+<p>As official bazel requires libtool provided by Xcode to accept params file as arguments, such feature breaks the building of libraries on macOS 10.13.6 (Xcode 10.1) that is the basis of tensorflow on macOS with GPU supports. The building issue of bazel 5.2.0 mentioned below will unavoidly happened on the legacies system that have been on the side line of bazel's release plan.O ne patch on top of 5.2.0 has been applied for bazel, which is the main purpose of this repository.</p>
 <h2>Miscellaneous</h2>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/dscTutorials/tree/master/MDP_Pendulum">←
-Dynamic Programming: Pendulum</a>
-<p>Finds an optimal policy for an inverted pendulum, by converting
-the continuous system to a Markov Decision Process (MDP) and
-solving the Bellman equation using value iteration.</p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/dscTutorials/tree/master/tractorTrailer">←
-Tractor Trailer Controller</a>
-<p>I wrote this simulation for my Q-exam <a href=
-"../research/Q_Exam_Presentation.pdf">presentation</a> . It has
-partial sensing of its state using noisy sensors and control of the
-steering angle and travel speed (both of which were bounded). The
-states is estimated using an extended Kalman filer (EKF) and then
-controlled using a discrete linear quadratic regulator (dLQ),
-linearized about the current state estimate.</p>
-<p>Animations: <a href=
-"http://www.youtube.com/watch?v=KV8_1eeShVg">One</a> , <a href=
-"http://www.youtube.com/watch?v=rdBmSTarx3U">Two</a> , <a href=
-"http://www.youtube.com/watch?v=9rnEmSdOHpk">Three</a></p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/dscTutorials/tree/master/Continuous_Finite_LQR">←
-LQR Trajectory Tracking</a>
-<p>A tutorial for using time-varying LQR to stabilize a non-linear
-trajectory. The code compares the time-varying gains to the
-infinite horizon gains. It also computes an approximation of the
-reachable set, using two different methods.</p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/dscTutorials/tree/master/chebyshevPolynomials">←
-Chebyshev Polynomials</a>
-<p>A small library of functions that use Chebyshev polynomials for
-function approximation and solving differential equations. These
-functions are also used in my orthogonal collocation trajectory
-optimization program. The background methematics for this library
-are largely taken from a book by Lloyd Trefethen: <a href=
-"https://people.maths.ox.ac.uk/trefethen/books.html">Approximation
-Theory and Approximation Practice</a>.</p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/dscTutorials/tree/master/cmaes_controlDesign">←
-CMAES Demo</a>
-<p>This code uses Covariance Matrix Adaptation Evolutionary
-Strategy (<a href=
-"https://www.lri.fr/~hansen/cmaesintro.html">CMAES</a>) to solve
-for the gains in a simple non-linear controller.</p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/dscTutorials/tree/master/smoothing">←
-Function Smoothing</a>
-<p>This code is used to create smooth versions of commonly used
-discontinuous functions (max,min,abs,ramp,clamp...). There are two
-methods for smoothing that are used: exponential, and
-polynomial.</p>
-<h2>Java Libraries</h2>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/myJavaPkgs/tree/master/mpk_gui">←
-Simple GUI Classes</a>
-<p>This package contains a few functions for making simple 2D
-scientific plots and animations based on the standard java.awt and
-java.swing packages. It also includes some code for getting the
-frame-rate of an animation correct, as well as linking buttons to
-parameters in an animation.</p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/myJavaPkgs/tree/master/mpk_dsc">←
-DynamicalSystems and Control</a>
-<p>A few functions that I've used in my Java simulation libraries
-for doing simulations of walking robots. Most code is not posted,
-but I have included a few utility classes, such as a Butterworth
-filter.</p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/myJavaPkgs/tree/master/examples">←
-Examples</a>
-<p>A few executable Java classes that demonstrate the use of the
-above packages, particularily for plotting and animation.</p>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/myJavaPkgs/tree/master/mpk_games">←
-Games</a>
-<p>A place to put simple Java games. So far I've only written one:
-<a href=
-"http://en.wikipedia.org/wiki/Snake_(video_game)">Snake</a>.</p>
-<h2>Website</h2>
-<a class="navLink" target="blank" href=
-"https://github.com/MatthewPeterKelly/website">← Source</a>
-<p>The source for this website is in GitHub, refer to <a href="https://github.com/llv22/orlando.github.io">
-tutorials</a>.</p>
+<a class="navLink" target="blank" href="https://github.com/llv22/pytorch_daily">← Pytorch Daily: Code snappits via torch</a>
+<p>Implementation based on torch, lightning as well as language models.</p>
+<a class="navLink" target="blank" href="https://github.com/llv22/tensorflow_daily">← Tensorflow Daily: Code snappits via tensorflow</a>
+<p>Implementation based on torch, lightning as well as language models.</p>
+<a class="navLink" target="blank" href="https://github.com/llv22/RLBerkelyFa2018">← Reinforcement Learning of Berkely Fall 2018</a>
+<p>Course assignement given by Berkely Fall 2018, refer to <a href="http://rail.eecs.berkeley.edu/deeprlcourse-fa19/">Deep Reinforcement Learning CS285</a>.</p>
 </body>
 </html>
