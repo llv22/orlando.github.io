@@ -45,132 +45,39 @@ gtag('config', 'G-BZGM3WTCJY');
 Sichuan University. The ongoing recent projects were parts of my PhD research at <a href="https://www.ucsc.edu/">University of California, Santa Cruz University</a>, where I worked with Professor <a href="https://sites.google.com/ucsc.edu/yizhang" target="blank">Zhang, Yi</a> studying interactive dialog systems, NLU(natural language understanding) and recommender systems.</div>
 <div class="signature">- Orlando, Ding</div>
 <h2 id="Research_Fossil">CONOP Optimization</h2>
-<p>One of the main research focuses in my PhD was developing a more robust balance controller for the <a href=
-"http://ruina.tam.cornell.edu/research/topics/locomotion_and_robotics/ranger/Ranger2011/"
-target="blank">Cornell Ranger walking robot</a> . I developed a
-controller architecture for the robot that allowed for automated
-controller design, both in simulation and in hardware. The gains
-for the balance controller were initially computed using
-large-scale optimization in simulation. The simulation was designed
-to include a wide range of disturbances, so that we could usually
-transfer controllers directly from simulation to the real robot.
-Once on the robot, the balance controller gains were fine-tuned
-using optimization that was running in real-time on the robot.</p>
+<p>CONOP Optimization Biochronology as a Traveling Salesman Problem, which can be solved by a simulated annealing process. However, inside the inner loop, there exists a non-convex restriction that leads to the major calculation bottleneck. In this research, I focuses on developing a visual studio-based plugin to help us trace actual performance curve aligning with the theoretical analysis. After such alignment, dynamic programming calculors together with CPU caches technology has been applied for optimization of the sequential model. Meanwhile, a consistent sampling MDP model has been given to speed up the program, while a heuristic ML model has been used to dynamically swith on/off multi-CPU parallelization. Furthermore, for the purpose of accelerating the algorithm, a non-consistent MDP model has been proposed to better random walk in the solution space and primiarly verfied.</p>
 <ul>
-<li>Wrote high-fidelity simulator for Ranger, including contact
-solver.<br>
-<a href=
-"https://github.com/MatthewPeterKelly/RangerSimulation">Ranger
-Simulation and Trajectory Optimization Code.</a></li>
-<li>Completely rewrote the high-level control architecture on
-Ranger.<br>
-<a href=
-"https://github.com/RuinaLab/Ranger/tree/master/Ranger/Control/Controller">
-Control Code.</a> <a href=
-"https://github.com/RuinaLab/Ranger/tree/master/Ranger/Control/Estimator">
-Estimation Code.</a></li>
-<li>Draft of the main research paper: <a href=
-"https://www.dropbox.com/s/xwdm6rpq8wx0nkh/RangerControlPaper_SubmittedOct2017.pdf?dl=1">
-Automatic Controller Design for Ranger.pdf</a></li>
-<li><a href=
-"https://www.youtube.com/playlist?list=PLb52zaHzuYlrZMcPYHyCcLE039CJ0cqAN"
-target="blank">Walking videos and simulations</a></li>
+<li><a href="2013_CONOP_Optimization.pdf" target="blank">Refined version of 2013 SAP conference - "CONOP optimization"</a></li>
+<li><a href="ZE038_CONOP_optimization.pdf" target="blank">Original version of 2013 SAP conference - ZE038 "CONOP optimization"</a></li>
 </ul>
 <h2 id="Research_RL_ProductRecommendation">Product recommendation via Reinforcement Learning</h2>
-<p>I spent much of my time at Cornell learning trajectory
-optimization and coding up my own solvers. I found learning about
-the subject fascinating, so I developed a set of tutorials for
-trajectory optimization, including a long tutorial paper that is
-published in SIAM.</p>
+<p>Establish a Reinforcement Learning (RL) Model to generate recommended product items, so our system can reach the balance between gaining product profit and satisfying customer interests. The main problem is how to setup RL model four tuples (state, action, reward, transition) and integrate RL model with system.</p>
 <ul>
 <li><a href=
-"../tutorials/trajectoryOptimization/index.html">Tutorial
-Webpage</a></li>
-<li><a href=
-"https://epubs.siam.org/doi/10.1137/16M1062569">Tutorial Paper</a>:
-SIAM, 2017</li>
-<li><a href=
-"https://github.com/MatthewPeterKelly/OptimTraj">OptimTraj</a>:
-Trajectory Optimization Library for Matlab</li>
-<li><a href="https://youtu.be/wlkRYMVUZTs">Video Lecture</a>
-(direct collocation, YouTube)</li>
+"research_detail_algorithm_in_SAP.pdf">Technical Design and Mathematical Analysis of The Product Recommendation System</a></li>
 </ul>
 <h2 id="Research_RL_ProteinGeneration">Protein affinity prediction via Deep Learning</h2>
-<p>Conference paper for ICRA 2015. The key contribution is a way of
-posing and solving the following constrained optimization problem:
-"Find a controller that can regulate walking speed while preventing
-all falls, given any (bounded) disturbance."</p>
+<p>Conference paper for ICRA 2015. Protein-ligand prediction plays a key role in drug discovery. Nevertheless, many algorithms are over reliant on 3D structure representations of proteins and ligands which are often rare. Techniques that can leverage the sequence-level representations of proteins and ligands are thus required to predict binding affinity and facilitate the drug discovery process. We have proposed a deep learning model with an attention mechanism to predict protein-ligand binding affinity. Our model is able to make comparable achievements with state- of-the-art deep learning models used for protein-ligand binding affinity prediction.</p>
 <ul>
-<li><a href="https://youtu.be/0Iir5vbrEo0" target=
-"blank">Three-minute Video</a></li>
-<li><a href=
-"https://github.com/MatthewPeterKelly/icra2015_kellyRuina">Source
-Code</a></li>
-<li><a href="ICRA_2015/icra2015_kellyRuina.pdf">Conference
-Paper</a></li>
-<li><a href="ICRA_2015/icra2015_digitalPoster.pdf">Poster</a></li>
+<li><a href="Abena_PROTEIN-LIGAND BINDING AFFINITY PREDICTION USING DEEP LEARNING_V2.3.pdf">Paper</a></li>
 </ul>
 <h2 id="Research_P2P_SHARE">Master Thesis - Peer-to-Peer Network Optimization and Resource Sharing</h2>
-<p>I took my A exam in August 2014. My proposal was on the topic of
-'Heirarchical Biped Control'. The idea is to do step planning on a
-reduced model of the robot, which is then used to help generate the
-motor commands on the full model. In addition to my presentation, I
-submitted three written reports.</p>
+<p>In this paper, the process of implementing the JXME’s MIDP protocol and HTTP connection between relay proxy and mobile peer are introduced. In the meanwhile, the encapsulation of Byte Streams on the end of mobile is analyzed. Fixing with several serious programming bugs that severely impact the stability and scalability of MIDP framework, one basic programming framework for sharing resources among mobile peers is proposed.</p>
 <ul>
-<li><a href=
-"https://www.dropbox.com/s/j2ot4qvsv6310by/MattKelly__A_Exam_Presentation.pdf?dl=1">
-Presentation</a> <em>- Heirarchical Biped Control</em></li>
-<li><a href=
-"MattKelly__Transcription_Methods_for_Trajectory_Optimization.pdf">Report</a>
-<em>- Transcription Methods for Trajectory Optimization</em> (
-<a href="code.html#TrajectoryOptimization">examples</a> )</li>
-<li><a href=
-"MattKelly__Two_Walking_Robot_Simulators.pdf">Report</a> <em>- Two
-Walking Robot Simulators</em> ( <a href=
-"https://www.youtube.com/watch?v=t1N4WNsyY8M&amp;feature=youtu.be">Simple
-Biped</a> , <a href=
-"https://www.youtube.com/watch?v=zvAufKB83g4&amp;feature=youtu.be">Ranger</a>
-)</li>
-<li><a href=
-"MattKelly__Simulations_with_Sliding_and_Intermittent_Contact.pdf">Report</a>
-<em>- Simulations with Sliding and Intermittent Contact ( <a href=
-"code.html#Simulation">examples</a> )</em></li>
+<li><a href="http://caod.oriprobe.com/articles/13063321/Deep_research_on_JXME_S_MIDP_protocol_and_video_sharing_framework.htm">
+Paper</a></li>
 </ul>
-<h2 id="Research_RDF_Graph">Undergraduate Thesis - Generated Graph</h2>
-<p>My undergraduate thesis project at Tufts University was
-designing, fabricating, and testing a new type of surgical bone
-saw. At the conclusion of the project I submitted provisional
-patent for my saw design and published the experimental results in
-the ASME Journal of Medical Devices. I was also worked on two
-conference papers - one for my saw, and one for a saw designed by
-another student.</p>
-<p>Research advisor: <a href=
-"https://www.rose-hulman.edu/academics/faculty/james-thomas-james3.html"
-target="blank">Tom James</a></p>
-<h3>Sagittal Saw:</h3>
+<h2 id="Research_RDF_Graph">Undergraduate Thesis - Identified Disease Source by exploring Family Graph</h2>
+<p>This research is trying to estalbish family Graph given the inheritance disease records given by Huaxi Hosptal. One RDF-based framework has been introduced to model entity-entity relations and link relevant resources accordingly. We explore the graph via one DFS algorithm with several adaptions to avoid deadlock loop during exploration and analyze the probability of the gene reproducing path in the graph.</p>
+<p>Research advisor: Professor <a href="https://baike.baidu.com/item/%E5%91%A8%E6%BF%80%E6%B5%81/11033487">Jiliu, Zhou</a></p>
 <ul>
-<li><a href=
-"James%20et%20al.%20-%202013%20-%20Sagittal%20Bone%20Saw%20With%20Orbital%20Blade%20Motion%20for%20Improved%20Cutting%20Efficiency.pdf">
-Journal Paper</a> <em>- Sagittal Bone Saw with Orbital Blade Motion
-for Improved Cutting Efficiency</em></li>
-<li><a href=
-"https://www.dropbox.com/s/7o3kuaa993t31fp/Matthew%20Kelly%20-%20Senior%20Thesis%20-%20Tufts%20University.pdf?dl=1">
-Senior Thesis</a> <em>- Novel Sagittal Bone Saw</em></li>
-<li><a href=
-"Kelly,%20Lannin,%20James%20-%202011%20-%20A%20Study%20on%20the%20cutting%20rate%20of%20a%20Novel%20Sagittal%20Bone%20Saw.pdf">
-Conference Paper</a> <em>- A Study on the Cutting Rate Performance
-of a Novel Sagittal Bone Saw</em></li>
-<li><a href=
-"provisional%20patent%2070011%20020P01%20-%20sagittal%20saw%20-%20Matthew%20Kelly,%20Tim%20Lannin,%20Tom%20James.pdf">
-Provisional Patent</a> <em>- Sagittal Saw</em></li>
 </ul>
-<h3>Recip Saw:</h3>
+<h2 id="Research_Research_Summary">Publication Summary</h2>
+<p>This summary has been given out for all publications about my previous research work sorted chronically.</p>
 <ul>
-<li>
-        <a href="ASME%20IMECE%202011-62457%20-%20Reciprocating%20Bone%20Saw%20-%20Effect%20of%20Blade%20Speed%20on%20Cutting%20Rate.pdf">Conference Paper</a> - Recriprocating Bone Saw: Effect of Blade Speed on Cutting Rate
-</li>
+<li><a href="publications_summary.pdf">
+Paper</a></li>
 </ul>
-<br>
 <br>
 <br>
 <br>
