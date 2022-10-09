@@ -1,5 +1,4 @@
-# orlando.github.io
+# Matthew Peter Kelly - website source code
 
-Orlando's personal page hosted on Github
-
-You can also refer to [https://support.soe.ucsc.edu/web/personal](UCSC SOE Page) to setup SOE personal account.
+This repository contains the source code for my personal website:
+[https://matthewpeterkelly.github.io/](https://matthewpeterkelly.github.io/)
